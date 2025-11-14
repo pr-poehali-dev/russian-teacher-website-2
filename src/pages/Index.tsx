@@ -171,7 +171,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="Store" size={28} className="text-primary" />
-              <span className="text-2xl font-bold text-foreground">Симбат Сити</span>
+              <span className="text-2xl font-bold text-foreground">Symbat City</span>
             </div>
             
             <div className="hidden md:flex items-center gap-6">
@@ -195,18 +195,28 @@ export default function Index() {
               </button>
             </div>
 
-            <Sheet open={isCartOpen} onOpenChange={setIsCartOpen}>
-              <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="relative">
-                  <Icon name="ShoppingCart" size={20} />
-                  {cartItemsCount > 0 && (
-                    <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0">
-                      {cartItemsCount}
-                    </Badge>
-                  )}
-                </Button>
-              </SheetTrigger>
-              <SheetContent className="w-full sm:max-w-lg overflow-y-auto">
+            <div className="flex items-center gap-3">
+              <Button variant="ghost" size="sm">
+                <Icon name="LogIn" size={18} className="mr-2" />
+                Вход
+              </Button>
+              <Button size="sm">
+                <Icon name="UserPlus" size={18} className="mr-2" />
+                Регистрация
+              </Button>
+              
+              <Sheet open={isCartOpen} onOpenChange={setIsCartOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="outline" size="icon" className="relative">
+                    <Icon name="ShoppingCart" size={20} />
+                    {cartItemsCount > 0 && (
+                      <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0">
+                        {cartItemsCount}
+                      </Badge>
+                    )}
+                  </Button>
+                </SheetTrigger>
+                <SheetContent className="w-full sm:max-w-lg overflow-y-auto">
                 <SheetHeader>
                   <SheetTitle>Корзина</SheetTitle>
                 </SheetHeader>
@@ -278,8 +288,9 @@ export default function Index() {
                     </>
                   )}
                 </div>
-              </SheetContent>
-            </Sheet>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </nav>
@@ -288,7 +299,7 @@ export default function Index() {
         <section className="py-20 px-4 animate-fade-in">
           <div className="container mx-auto text-center max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Добро пожаловать в Симбат Сити
+              Добро пожаловать в Symbat City
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Современные гаджеты и электроника по лучшим ценам. Качество, надёжность и быстрая доставка.
@@ -547,7 +558,7 @@ export default function Index() {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Icon name="Store" size={24} className="text-primary" />
-            <span className="text-xl font-bold">Симбат Сити</span>
+            <span className="text-xl font-bold">Symbat City</span>
           </div>
           <p className="text-muted-foreground mb-4">
             Лучшие гаджеты и электроника для вас
@@ -567,7 +578,7 @@ export default function Index() {
             </a>
           </div>
           <p className="text-sm text-muted-foreground mt-8">
-            © 2024 Симбат Сити. Все права защищены.
+            © 2024 Symbat City. Все права защищены.
           </p>
         </div>
       </footer>
