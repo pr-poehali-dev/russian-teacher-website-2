@@ -128,7 +128,7 @@ export default function Index() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <Icon name="Store" size={28} className="text-primary" />
-              <span className="text-2xl font-bold text-foreground">TechShop</span>
+              <span className="text-2xl font-bold text-foreground">Симбат Сити</span>
             </div>
             
             <div className="hidden md:flex items-center gap-6">
@@ -245,7 +245,7 @@ export default function Index() {
         <section className="py-20 px-4 animate-fade-in">
           <div className="container mx-auto text-center max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">
-              Добро пожаловать в TechShop
+              Добро пожаловать в Симбат Сити
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               Современные гаджеты и электроника по лучшим ценам. Качество, надёжность и быстрая доставка.
@@ -389,7 +389,7 @@ export default function Index() {
         <div className="container mx-auto text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Icon name="Store" size={24} className="text-primary" />
-            <span className="text-xl font-bold">TechShop</span>
+            <span className="text-xl font-bold">Симбат Сити</span>
           </div>
           <p className="text-muted-foreground mb-4">
             Лучшие гаджеты и электроника для вас
@@ -409,7 +409,7 @@ export default function Index() {
             </a>
           </div>
           <p className="text-sm text-muted-foreground mt-8">
-            © 2024 TechShop. Все права защищены.
+            © 2024 Симбат Сити. Все права защищены.
           </p>
         </div>
       </footer>
